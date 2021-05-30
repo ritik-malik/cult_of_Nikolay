@@ -1,5 +1,7 @@
 # Tips & Tricks
 
+![Nikolay](images/nikolay.jpg)
+
 Because once a cross eyeballed Nikolay said:
 
  ~ `Hail the cult of Nikolay Kadnikov`
