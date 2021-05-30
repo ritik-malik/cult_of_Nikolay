@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Enumeration" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1622370840.12" ts_lastsave="1622377418.31" unique_id="1">
+		<rich_text>Find the services running on the box, using nmap:
+
+nmap cheatsheet &lt;link here&gt;
+
+If HTTP web server is running server &lt;follow here&gt;
+
+If SQL service is running &lt;follow here&gt;
+
+If SSH service is running &lt;follow here&gt;
+
+If FTP service is running &lt;follow here&gt;
+
+If RDP service is running &lt;follow here&gt;
+
+
+
+
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="HTTP web server" prog_lang="custom-colors" readonly="False" tags="HTTP" ts_creation="1622371452.18" ts_lastsave="1622373623.84" unique_id="2">
+			<rich_text>Usually on Port 80, but be sure to check uncommon port too
+Web server can be running on other ports
+
+• Check version of server
+   ◇ If nginx, apache, IIS etc
+   ◇ Check vulns online for this version
+   ◇ Find exploit / metasploit
+   ◇ Read the source code
+   ◇ Check for creds/hints in comments
+
+• Check robots.txt
+   ◇ See the dirs allowed
+   ◇ Check sitemap.xml if avaiable
+
+• Check for common dirs like /admin /login
+
+• Check for dirs and php pages:
+   ◇ Use gobuster
+   ◇ Dirbuster common.txt
+
+• If site allows some kind of user registration and login
+   ◇ Use burpsuite
+   ◇ Check POST request params while making account
+   ◇ Check how cookies/ PHP session ID are recieved
+   ◇ Try to decode manipulate cookies after login
+   ◇ See how it works, like JWT token
+
+• If got the admin panel
+   ◇ Check source code for hints
+   ◇ Can use CEWL for wordlist
+   ◇ Use burpsuite intruder
+   ◇ Bruteforce
+   ◇ SQL injection
+   ◇ If admin panel is accessible
+      ▪ Search for user creds
+      ▪ See if there is some upload vuln
+      ▪ Upload PHP webshell
+      ▪ Call it from curl
+      ▪ Get reverse shell connection on local machine
+
+• If got some JS scripts
+   ◇ Check version
+   ◇ Deobsfucate them
+   ◇ Understand source code
+   ◇ Make exploit
+
+• If some search box
+   ◇ Try SQL injection
+   ◇ Dump DBs
+   ◇ Get user and pass hash
+
+
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="FTP" prog_lang="custom-colors" readonly="False" tags="FTP" ts_creation="1622372419.21" ts_lastsave="1622372866.4" unique_id="4">
+			<rich_text>• Try anonymous login
+   ◇ enumerate dirs
+   ◇ Get files
+
+• Check version
+   ◇ seach vulns and exploits online
+
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="SSH" prog_lang="custom-colors" readonly="False" tags="SSH" ts_creation="1622372893.82" ts_lastsave="1622373315.07" unique_id="5">
+			<rich_text>Usually on Port 22, but be sure to check uncommon port too
+
+• Check SSH version
+   ◇ Seach online for exploits
+
+• Making a stable shell
+   ◇ If already with reverse shell, search for user .ssh directory
+   ◇ If write permission available, copy your public key there
+   ◇ Login with your account in ssh
+
+• Logging with private key
+   ◇ If already with reverse shell, search for user .ssh directory
+   ◇ If user's private key is readable, copy that in local machine
+   ◇ Change the key permission
+      ▪ </rich_text>
+			<rich_text style="italic">chmod 600 priv_key</rich_text>
+			<rich_text>
+   ◇ Login with this key
+      ▪ </rich_text>
+			<rich_text style="italic">ssh user@IP -i priv_key</rich_text>
+			<rich_text>
+
+
+
+
+
+
+
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="SQL" prog_lang="custom-colors" readonly="False" tags="SQL" ts_creation="1622373371.61" ts_lastsave="1622373437.59" unique_id="6">
+			<rich_text>Usually on Port 1433
+
+• See if vuln with sql map
+
+• Online tools for DB cracking
+
+
+
+
+
+
+</rich_text>
+		</node>
+	</node>
+</cherrytree>
