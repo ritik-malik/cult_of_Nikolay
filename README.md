@@ -8,7 +8,7 @@ Beacuse once a cross eyed gentleman from the asylum said:\
 ## Teachings
 
 * [`eyeballs.ctd`](eyeballs.ctd) : Contains a rough approach for HTB
-* [`tips_and_tricks.md`](tips_and_tricks.md): Contains a vague cheatsheet for the same
+* [`basement_kids.md`](basement_kids.md): Contains a vague cheatsheet for the same
 
 
 ## Our Cherismatic Leaders
