@@ -101,6 +101,8 @@ When in the shell:
     * `:!cat /etc/passwd`
 * If no passwd sudo on binaries, check [GTFO bins](https://gtfobins.github.io/)
 
+* [CyberChef](https://gchq.github.io/CyberChef/)
+
 ## Wordlists & webshell
 
 * [Dirb wordlist](https://github.com/v0re/dirb/tree/master/wordlists)
