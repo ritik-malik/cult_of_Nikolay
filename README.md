@@ -1,13 +1,15 @@
-# The Cult of Nikolay Kadnikov
+<div align="center">
+    <img src="images/nikolay.jpg" align="center" height="200" width="200">
+    <h2>
+        The Cult of Nikolay Kadnikov
+    </h2>
+    Beacuse once a cross eyed gentleman from the asylum said: <br>
+    "Hail the cult of Nikolay Kadnikov"
+</div>
 
-<img src="images/nikolay.jpg" align="center" height="200" width="200">
+## Our Philosophies
 
-Beacuse once a cross eyed gentleman from the asylum said:\
-`"Hail the cult of Nikolay Kadnikov"`
-
-## Teachings
-
-* [`eyeballs.ctd`](eyeballs.ctd) : Contains a rough approach for HTB
+* [`eyeballs.md`](eyeballs.md) : Contains a rough approach for HTB
 * [`basement_kids.md`](basement_kids.md): Contains a vague cheatsheet for the same
 
 
